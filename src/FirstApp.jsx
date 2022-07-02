@@ -1,5 +1,9 @@
 const message = "Hello World";
 
-export const FirstApp = () => {
-  return <h1>{message}</h1>;
+export const FirstApp = ({ title, subtitle }) => {
+  return (
+    <>
+      <h1>{title}{subtitle}</h1>
+    </>
+  );
 };
