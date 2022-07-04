@@ -5,8 +5,10 @@ export const FirstApp = ({ title, subTitle }) => {
     <>
       <h1>
         {title}
-        {subTitle}
       </h1>
+      <h2>
+        {subTitle}
+      </h2>
     </>
   );
 };
@@ -14,4 +16,9 @@ export const FirstApp = ({ title, subTitle }) => {
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
+};
+
+FirstApp.defaultProps = {
+  title: 'No data',
+  subTitle: 'No data',
 };
