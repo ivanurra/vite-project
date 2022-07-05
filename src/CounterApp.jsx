@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 
 export const CounterApp = () => {
   const [counter, setCounter] = useState(0);
-  const sum = () => {
+  const up = () => {
     return setCounter(counter + 1);
   };
 
-  const rest = () => {
+  const down = () => {
     return setCounter(counter - 1);
   };
 
@@ -15,8 +15,8 @@ export const CounterApp = () => {
     <>
       <h1>CounterApp</h1>
       <h2> {counter} </h2>
-      <button onClick={sum}>+1</button>
-      <button onClick={rest}>-1</button>
+      <button onClick={up}>+1</button>
+      <button onClick={down}>-1</button>
       <div>{counter < 0 ? "Under zero 😖" : "Go, go! 🚀"}</div>
     </>
   );
