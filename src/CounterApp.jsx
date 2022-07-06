@@ -3,17 +3,12 @@ import PropTypes from "prop-types";
 
 export const CounterApp = () => {
   const [counter, setCounter] = useState(0);
-  const up = () => {
-    setCounter(counter + 1);
-  };
 
-  const down = () => {
-    setCounter(counter - 1);
-  };
+  const up = () => setCounter(counter + 1);
 
-  const reset = () => {
-    setCounter(0);
-  };
+  const down = () => setCounter(counter - 1);
+
+  const reset = () => setCounter(0);
 
   return (
     <>
